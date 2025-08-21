@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <servlet>
+        <servlet-name>bai4</servlet-name>
+        <servlet-class>fit.iuh.se.ltwww_java_21082025_tuan01_tophangiabao.Bai4</servlet-class>
+        
+        <init-param>
+            <param-name>username</param-name>
+            <param-value>Player2</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>email</param-name>
+            <param-value>Player2@gmail.com</param-value>
+        </init-param>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>bai4</servlet-name>
+        <url-pattern>/bai-4</url-pattern>
+    </servlet-mapping>
+
+    <context-param>
+        <param-name>appName</param-name>
+        <param-value>This value is context param</param-value>
+    </context-param>
+</web-app>
