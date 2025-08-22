@@ -1,0 +1,21 @@
+.formTable {
+    background: #b4ecff;
+    border-radius: 50px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    padding: 20px;
+}
+
+.submitButton {
+    width: 100%;
+    border-radius: 20px;
+    color: white;
+    background: #5baeff;
+    font-weight: bold;
+}
+
+td {
+    padding: 10px;
+}

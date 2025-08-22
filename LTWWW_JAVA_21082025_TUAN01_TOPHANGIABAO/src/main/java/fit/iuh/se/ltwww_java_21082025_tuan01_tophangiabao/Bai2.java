@@ -38,7 +38,7 @@ public class Bai2 extends HttpServlet{
         out.println("<a href='bai-4'>" + nextPage4 + "</a>");
         out.println("</body></html>");
         out.println("<br/>");
-        out.println("<a href='bai-5'>" + nextPage5 + "</a>");
+        out.println("<a href='login.html'>" + nextPage5 + "</a>");
         out.println("</body></html>");
     }
 
