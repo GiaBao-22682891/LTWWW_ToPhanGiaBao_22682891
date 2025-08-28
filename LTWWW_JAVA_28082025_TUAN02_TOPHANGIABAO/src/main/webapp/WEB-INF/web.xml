@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <filter>
+        <display-name>authentication</display-name>
+        <filter-name>Bai1_filter</filter-name>
+        <filter-class>iuh.fit.se.ltwww_java_28082025_tuan02_tophangiabao.Bai1</filter-class>
+        <init-param>
+            <param-name>username</param-name>
+            <param-value>TestingAcc1234</param-value>
+        </init-param>
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>test1234</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>Bai1_filter</filter-name>
+        <url-pattern>/hello-servlet</url-pattern>
+    </filter-mapping>
+
+</web-app>
