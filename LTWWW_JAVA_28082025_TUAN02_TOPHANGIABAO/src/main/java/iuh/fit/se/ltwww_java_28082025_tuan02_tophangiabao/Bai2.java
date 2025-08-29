@@ -24,7 +24,7 @@ import java.nio.file.StandardCopyOption;
 )
 
 public class Bai2 extends HttpServlet {
-    private String uploadPath = "/uploads_folder";
+    private String uploadPath = "/uploads_folder_Server";
     private String uploadPathToSource;
     private String uploadPathToTarget;
 
@@ -37,14 +37,14 @@ public class Bai2 extends HttpServlet {
             userDir = new File(userDir).getParent();
         }
 
-        uploadPathToSource = userDir + "/LTWWW_JAVA_28082025_TUAN02_TOPHANGIABAO/src/main/webapp/uploads_folder";
+        uploadPathToSource = userDir + "/LTWWW_JAVA_28082025_TUAN02_TOPHANGIABAO/src/main/webapp/uploads_folder_Server";
         File uploadPathToSourceDir = new File(uploadPathToSource);
         if (!uploadPathToSourceDir.exists()) {
             uploadPathToSourceDir.mkdirs();
         }
 
         //2. Target Path
-        uploadPathToTarget = this.getServletContext().getRealPath("/uploads_folder");
+        uploadPathToTarget = this.getServletContext().getRealPath("/uploads_folder_Server");
         File uploadPathToTargetDir = new File(uploadPathToTarget);
         if (!uploadPathToTargetDir.exists()) {
             uploadPathToTargetDir.mkdirs();
