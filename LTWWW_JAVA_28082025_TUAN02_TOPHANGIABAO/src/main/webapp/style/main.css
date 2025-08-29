@@ -1,0 +1,25 @@
+.tableStyle {
+    background:#a4fff6 ;
+    border: black solid 1px;
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td {
+    padding: 5px;
+}
+
+button {
+    width: 100%;
+}
+
+.upload-form {
+    background: beige;
+    border: black solid 1px;
+    width: 400px;
+    padding: 8px;
+}

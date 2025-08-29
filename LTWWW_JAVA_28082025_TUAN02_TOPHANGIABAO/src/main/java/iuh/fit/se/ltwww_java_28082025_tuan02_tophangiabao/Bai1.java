@@ -22,7 +22,8 @@ public class Bai1 implements Filter {
            filterChain.doFilter(servletRequest, servletResponse);
 
        } else {
-           servletResponse.getWriter().write("<h1>" + "It is not working" + "</h1>");
+           servletResponse.getWriter().write("<h1 style='color:red'>" + "Uh oh! seem like you type your username or password wrong " + "</h1>");
+           servletResponse.getWriter().write("<a href='login.html'>" + "Click here to return login page" +"</a>");
        }
 
     }
