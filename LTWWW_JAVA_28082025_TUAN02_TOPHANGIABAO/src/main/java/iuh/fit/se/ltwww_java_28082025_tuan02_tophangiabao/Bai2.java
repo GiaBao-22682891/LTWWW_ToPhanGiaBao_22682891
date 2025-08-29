@@ -11,6 +11,7 @@ import jakarta.servlet.http.Part;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
@@ -36,7 +37,7 @@ public class Bai2 extends HttpServlet {
             userDir = new File(userDir).getParent();
         }
 
-        uploadPathToSource = userDir + "LTWWW_ToPhanGiaBao_22682891/LTWWW_JAVA_28082025_TUAN02_TOPHANGIABAO/src/main/webapp/uploads_folder";
+        uploadPathToSource = userDir + "/LTWWW_JAVA_28082025_TUAN02_TOPHANGIABAO/src/main/webapp/uploads_folder";
         File uploadPathToSourceDir = new File(uploadPathToSource);
         if (!uploadPathToSourceDir.exists()) {
             uploadPathToSourceDir.mkdirs();
@@ -77,7 +78,9 @@ public class Bai2 extends HttpServlet {
 //            try (InputStream inputStream2 = filePart.getInputStream()) {
 //                Files.copy(inputStream2, Paths.get(uploadPathToTarget, fileName), StandardCopyOption.REPLACE_EXISTING);
 //            }
-
+            PrintWriter out = resp.getWriter();
+            out.println("<h1>" + "Your files have successfully uploaded, go check it!" + "</h1><br>");
+            out.println("<a href='hello-servlet'>" + "Click here to return to home page" + "</a>");
             System.out.println(uploadPath + File.separator + fileName);
         }
 

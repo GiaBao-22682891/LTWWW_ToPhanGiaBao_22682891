@@ -25,6 +25,7 @@ public class HelloServlet extends HttpServlet {
         out.println("<h1>" + message + username + "!" + "</h1><br>");
         out.println("<h2>" + "Welcome back! Let's begin our journey again" + "</h2><br>");
         out.println("<a href='file-uploader.html'>" + "Exercise 2: Multi-files upload"  +"</a>");
+        out.println("<a href='file-uploader.html'>" + "Exercise 3: Upload file to Database"  +"</a>");
         out.println("</body></html>");
     }
 
